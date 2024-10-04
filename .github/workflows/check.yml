@@ -1,9 +1,10 @@
 name: Check Versions
 
-on:
-  schedule:
-    - cron:  '0 * * * *'
-
+on: push
+  # schedule:
+  #   - cron:  '0 * * * *'
+  # push:
+    
 env:
   DESTINATION_REPOSITORY: github/codeql-action
   SOURCE_REPOSITORY: ${{ github.repository }}
